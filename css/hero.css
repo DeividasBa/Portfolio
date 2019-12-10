@@ -1,0 +1,33 @@
+.hero {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0px;
+    grid-template-columns: 4fr 4fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.heroLeft {
+    display:grid;
+    padding-top: 100px;
+    justify-self: end;
+}
+    h1{
+        line-height: 50px;
+        font-size: 42px;
+    }
+
+    .heroParagraph{
+        line-height: 50px;
+        font-size: 36px;
+    }
+
+    .btn {
+        margin-top: 40px;
+        align-self: end;
+        width: 80px;
+        line-height: 24px;
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+    }
