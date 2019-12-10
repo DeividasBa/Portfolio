@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/button.css">
     <link rel="stylesheet" href="./css/header.css">
@@ -16,160 +17,170 @@
     <title>Deivido Portfolio</title>
 </head>
 <body>
-<!-- Navigation -->
-    <header>
-        <div class="logo"> Deividas </div>
-        <div class="navigation-bar">
-            <a href="#">Home</a>
-            <a href="#">About me</a>
-            <a href="#">Services</a>
-            <a href="#">Works</a>
-            <a href="#">Contacts</a>
-        </div>
-        <div class="nav-button">Let's Talk</div>
-    </header>
-<!-- Navigation end-->
-<!-- //////////////////////////////////////////////////// -->
-<!-- Hero -->
-    <div class="container">
-        <div class="hero">
-            <div>
-            <h1>Hello,I am Deividas</h1>
-            <p>Project Manager</p>
-            <a href="#" class="btn">My Works</a>
-            </div>
-            <img class="hero-img" src="" alt="My img">
-        </div>
-    </div>
-<!-- Hero end-->
-<!-- //////////////////////////////////////////////////// -->
-<!-- About me -->
-    <div class="container">
-        <div class="aboutMe">
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium?</h2>
-            <div class="aboutContent">
-                <p class="aboutParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quas culpa accusamus eligendi voluptate exercitationem porro, commodi magnam ad excepturi!</p>
-                <p class="aboutParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. A maiores, animi tempore est quisquam ipsam!</p>
-                <a href="#" class="btn">Download CV</a>
-                <div class="aboutProgressBar">
-                    <div class="firstLine">
-                        <p firstLineName>Kazkas</p>
-                        <p firstLineProcent>90%</p>
+        <body>
+                <!-- Navigation -->
+                    <header class="container-header">
+                        <div class="nav-bar">
+                            <div class="logo"> .Deividas </div>
+                        <div class="navigation-links">
+                            <a href="#">Home</a>
+                            <a href="#">About me</a>
+                            <a href="#">Services</a>
+                            <a href="#">Works</a>
+                            <a href="#">Contacts</a>
+                        </div>
                     </div>
-                    <div class="secondLine">
-                        <p secondLineName>Kazkas2</p>
-                        <p secondLineProcent>80%</p>
+                    </header>
+                <!-- Navigation end-->
+                <!-- //////////////////////////////////////////////////// -->
+                <!-- Hero --> 
+                        <div class="container-hero">
+                        <div class="hero">
+                            <div class="heroLeft">
+                            <h1>Hello, I am Deividas</h1>
+                            <p class="heroParagraph">Project Manager</p>
+                            <a href="#" class="btn">My Works</a>
+                            </div>
+                            <img class="hero-img" src="" alt="My img">
+                        </div>
                     </div>
-                    <div class="thirdLine">
-                        <p thirdLineName>Kazkas3</p>
-                        <p thirdLineProcent>50%</p>
+                <!-- Hero end-->
+                <!-- //////////////////////////////////////////////////// -->
+                <!-- About me -->
+                    <div class="container-about">
+                        <div class="aboutMe">
+                            <h2 class="AboutHeadline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ea non debitis, fugiat assumenda necessitatibus sed ullam totam at earum nemo id porro quae dolorum obcaecati nulla labore hic temporibus.</h2>
+                            <div class="aboutContent">
+                                <p class="aboutParagraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quas culpa accusamus eligendi voluptate exercitationem porro, commodi magnam ad excepturi!</p>
+                                <p class="aboutParagraph2">Lorem ipsum dolor sit amet consectetur adipisicing elit. A maiores, animi tempore est quisquam ipsam!</p>
+                                <a href="#" class="btnAbout">Download CV</a>
+                           
+                                <div class="aboutProgressBar">
+                                    <div class="firstLine">
+                                        <div class="firstLineName">Project Management</div>
+                                        <div class="firstLineProcent">90%</div>
+                                    </div>
+                                    <div class="full">
+                                            <div class="bar">
+                                                <div class="loading"></div>
+                                            </div>
+                                        </div>
+
+                                    <!-- <div class="secondLine">
+                                        <p secondLineName>Kazkas2</p>
+                                        <p secondLineProcent>80%</p>
+                                    </div>
+                                    <div class="thirdLine">
+                                        <p thirdLineName>Kazkas3</p>
+                                        <p thirdLineProcent>50%</p>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-<!-- About me end -->
-<!-- //////////////////////////////////////////////////// -->
-<!-- My Services -->
-    <div class="container">
-        <h2>My Services</h2>
-        <div class="services">
-            <i class="fa fa-desktop"></i>
-            <h3 class="servicesName">Web Development</h3>
-            <p class="servicesParagraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque in dolorum dolor?</p>
-        </div>
-        <div class="services">
-            <i class="fa fa-desktop"></i>
-            <h3 class="servicesName">Web Development</h3>
-            <p class="servicesParagraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque in dolorum dolor?</p>
-        </div>
-        <div class="services">
-            <i class="fa fa-desktop"></i>
-            <h3 class="servicesName">Web Development</h3>
-            <p class="servicesParagraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque in dolorum dolor?</p>
-        </div>
-    </div>
-<!-- My Services end-->
-<!-- //////////////////////////////////////////////////// -->
-<!-- My Works -->
-        <div class="container">
-            <h2>My Works</h2>
-            <div class="workSamples">
-               <div> <img src="#" alt="firstPhoto">
-                <h6>Mobile App</h6>
-                <a href="#">Mobile App Network</a>
-               </div>
-               <div> <img src="#" alt="secondPhoto">
-                <h6>Mobile App</h6>
-                <a href="#">Mobile App Machine</a>
-               </div>
-               <div> <img src="#" alt="thirdPhoto">
-                <h6>Mobile App</h6>
-                <a href="#">Mobile App Art</a>
-               </div>
-               <div> <img src="#" alt="forthPhoto">
-                <h6>Mobile App</h6>
-                <a href="#">Mobile App Shuffle</a>
-               </div>
-            </div>
-            <a href="#" class="btn width">More Works</a>
-        </div>
-<!-- My Works end-->
-<!-- //////////////////////////////////////////////////// -->
-<!-- Testimonials -->
-        <div class="container">
-            <h2>Testimonials</h2>
-                <div class="testimonials">
-                    <p class="opinions">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius hic adipisci rerum magnam praesentium ratione, error veniam nesciunt ad voluptatibus.</p>
-                    <div class="people">
-                        <img src="#" alt="face">
-                        <div class="personName">Deividas Barbsys</div>
-                        <div class="personPosition">Projektu Vadovas</div>
+                <!-- About me end -->
+                <!-- //////////////////////////////////////////////////// -->
+                <!-- My Services -->
+                    <div class="container-services">
+                        <h2>My Services</h2>
+                        <div class="services">
+                            <i class="fa fa-desktop"></i>
+                            <h3 class="servicesName">Web Development</h3>
+                            <p class="servicesParagraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque in dolorum dolor?</p>
+                        </div>
+                        <div class="services">
+                            <i class="fa fa-desktop"></i>
+                            <h3 class="servicesName">Web Development</h3>
+                            <p class="servicesParagraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque in dolorum dolor?</p>
+                        </div>
+                        <div class="services">
+                            <i class="fa fa-desktop"></i>
+                            <h3 class="servicesName">Web Development</h3>
+                            <p class="servicesParagraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque in dolorum dolor?</p>
+                        </div>
                     </div>
-                </div>
-                <div class="testimonials">
-                    <p class="opinions">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius hic adipisci rerum magnam praesentium ratione, error veniam nesciunt ad voluptatibus.</p>
-                    <div class="people">
-                        <img src="#" alt="face">
-                        <div class="personName">Domas Maturis</div>
-                        <div class="personPosition">Projektu Vadovas</div>
-                    </div>
-                </div>
-                <div class="testimonials">
-                    <p class="opinions">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius hic adipisci rerum magnam praesentium ratione, error veniam nesciunt ad voluptatibus.</p>
-                    <div class="people">
-                        <img src="#" alt="face">
-                        <div class="personName">Simona Cesna</div>
-                        <div class="personPosition">Projektu Vadovas</div>
-                    </div>
-                </div>
-                <div class="testimonials">
-                    <p class="opinions">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius hic adipisci rerum magnam praesentium ratione, error veniam nesciunt ad voluptatibus.</p>
-                    <div class="people">
-                        <img src="#" alt="face">
-                        <div class="personName">Vytautas Dagys</div>
-                        <div class="personPosition">Projektu Vadovas</div>
-                    </div>
-                </div>
-        </div>
-<!-- Testimonials end-->
-<!-- //////////////////////////////////////////////////// -->
-<!-- Contacts -->
-        <div class="container">
-                <div class="contactsHeader">Do you have any Project? Let’s Talk</div>
-                <p class="contactsParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut animi, architecto, fugit iusto vitae commodi nobis itaque ullam quisquam ducimus vero, at quae laudantium suscipit.</p>
-            <div class="contactsRow">
-                <div class="PhoneNr">Phone Number</div>
-                <div class="FBContacts">Facebook</div>
-                <div class="LinkedIn">LinkedIn</div>
-                <div class="Gmail">Gmail</div>
-            </div>
-        </div>
-<!-- Contacts end-->
-<!-- //////////////////////////////////////////////////// -->
-<!-- Footer -->
-<!-- Footer end-->
-<!-- //////////////////////////////////////////////////// -->
+                <!-- My Services end-->
+                <!-- //////////////////////////////////////////////////// -->
+                <!-- My Works -->
+                        <div class="container-works">
+                            <h2>My Works</h2>
+                            <div class="workSamples">
+                               <div> <img src="#" alt="firstPhoto">
+                                <h6>Mobile App</h6>
+                                <a href="#">Mobile App Network</a>
+                               </div>
+                               <div> <img src="#" alt="secondPhoto">
+                                <h6>Mobile App</h6>
+                                <a href="#">Mobile App Machine</a>
+                               </div>
+                               <div> <img src="#" alt="thirdPhoto">
+                                <h6>Mobile App</h6>
+                                <a href="#">Mobile App Art</a>
+                               </div>
+                               <div> <img src="#" alt="forthPhoto">
+                                <h6>Mobile App</h6>
+                                <a href="#">Mobile App Shuffle</a>
+                               </div>
+                            </div>
+                            <a href="#" class="btn width">More Works</a>
+                        </div>
+                <!-- My Works end-->
+                <!-- //////////////////////////////////////////////////// -->
+                <!-- Testimonials -->
+                        <div class="container-testimonials">
+                            <h2>Testimonials</h2>
+                                <div class="testimonials">
+                                    <p class="opinions">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius hic adipisci rerum magnam praesentium ratione, error veniam nesciunt ad voluptatibus.</p>
+                                    <div class="people">
+                                        <img src="#" alt="face">
+                                        <div class="personName">Deividas Barbsys</div>
+                                        <div class="personPosition">Projektu Vadovas</div>
+                                    </div>
+                                </div>
+                                <div class="testimonials">
+                                    <p class="opinions">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius hic adipisci rerum magnam praesentium ratione, error veniam nesciunt ad voluptatibus.</p>
+                                    <div class="people">
+                                        <img src="#" alt="face">
+                                        <div class="personName">Domas Maturis</div>
+                                        <div class="personPosition">Projektu Vadovas</div>
+                                    </div>
+                                </div>
+                                <div class="testimonials">
+                                    <p class="opinions">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius hic adipisci rerum magnam praesentium ratione, error veniam nesciunt ad voluptatibus.</p>
+                                    <div class="people">
+                                        <img src="#" alt="face">
+                                        <div class="personName">Simona Cesna</div>
+                                        <div class="personPosition">Projektu Vadovas</div>
+                                    </div>
+                                </div>
+                                <div class="testimonials">
+                                    <p class="opinions">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius hic adipisci rerum magnam praesentium ratione, error veniam nesciunt ad voluptatibus.</p>
+                                    <div class="people">
+                                        <img src="#" alt="face">
+                                        <div class="personName">Vytautas Dagys</div>
+                                        <div class="personPosition">Projektu Vadovas</div>
+                                    </div>
+                                </div>
+                        </div>
+                <!-- Testimonials end-->
+                <!-- //////////////////////////////////////////////////// -->
+                <!-- Contacts -->
+                        <div class="container-contacts">
+                                <div class="contactsHeader">Do you have any Project? Let’s Talk</div>
+                                <p class="contactsParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut animi, architecto, fugit iusto vitae commodi nobis itaque ullam quisquam ducimus vero, at quae laudantium suscipit.</p>
+                            <div class="contactsRow">
+                                <div class="PhoneNr">Phone Number</div>
+                                <div class="FBContacts">Facebook</div>
+                                <div class="LinkedIn">LinkedIn</div>
+                                <div class="Gmail">Gmail</div>
+                            </div>
+                        </div>
+                <!-- Contacts end-->
+                <!-- //////////////////////////////////////////////////// -->
+                <!-- Footer -->
+                <!-- Footer end-->
+                <!-- //////////////////////////////////////////////////// -->
+                </body>
 </body>
 <script src="./js/action.js"></script>
 <script src="./js/data.js"></script>
