@@ -1,0 +1,25 @@
+.container-works {
+    display: grid;
+    grid-gap: 10px;
+    padding: 0px;
+}
+
+.workArticle {
+    display: grid;
+    font-size: 32px;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.workSamples {}
+
+.workSamples > img {}
+
+.workSamples > h6 {}
+
+.workSamples > a {}
+
+.btn-width {}
+
+
