@@ -1,0 +1,87 @@
+.container-testimonials {
+    display: grid;
+    grid-gap: 10px;
+    padding: 0px;
+    justify-items: center;
+    align-items: center;
+}
+
+.testimonialsArticle {
+    display: grid;
+    font-size: 32px;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.testSquare {
+display: grid;
+grid-template-rows: 1fr;  
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-row-gap: 10px;
+grid-column-gap: 50px;
+grid-template-areas: 
+    ". test1 test2 test3 test4 ."
+    ;
+    align-self: start;
+}
+
+.testimonials1{
+    grid-area: test1;
+}
+
+.testimonials2{
+    grid-area: test2;
+}
+
+.testimonials3{
+    grid-area: test3;
+}
+
+.testimonials4{
+    grid-area: test4;
+}
+
+.opinions{
+    display: grid;
+    align-self: start;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.people {
+    display: grid;
+    grid-template-rows: 1fr 1fr;  
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    "foto name"
+    "foto position"
+    ;
+}
+
+.personFoto {
+    display: grid;
+    grid-area: foto;
+}
+
+.personName {
+    display: grid;
+    grid-area: name;
+    padding-top: 5px;
+    font-size: 16px;
+    justify-self: center;
+    align-self: center;
+}
+
+.personPosition {
+    display: grid;
+    grid-area: position;
+    font-size: 12px;
+    justify-self: center;
+    align-self: center;
+}
+
+.testSocial {
+    font-size: 18px;
+}
+

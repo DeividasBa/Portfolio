@@ -1,0 +1,47 @@
+.container-services {
+    display: grid;
+    grid-gap: 10px;
+    padding: 0px;
+    justify-items: center;
+    align-items: center;
+}
+
+.servicesArticle {
+    font-size: 32px;
+    text-align: justify;
+}
+
+.services-clm {
+    display: grid;
+    grid-template-areas: " . services1 services2 services3 .";
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 200px;
+    grid-gap: 30px;
+}
+
+.services1 {
+    grid-area: services1;
+    text-align: center;
+}
+
+.services2 {
+    grid-area: services2;
+    text-align: center;
+}
+
+.services3 {
+    grid-area: services3;
+    text-align: center;
+}
+.fa-desktop {
+    font-size: 50px;
+}
+
+.servicesName {
+    margin: 15px 0;
+}
+
+.servicesParagraph {
+    font-size: 16px;
+    text-align: justify;
+}
