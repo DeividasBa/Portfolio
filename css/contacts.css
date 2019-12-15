@@ -34,10 +34,10 @@
         display: grid;
         grid-column-gap: 30px;
         grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         justify-items: start;
         grid-template-areas: 
-        "phone fba linkin gmail";
+        "fba linkin gmail";
     }
 
 
