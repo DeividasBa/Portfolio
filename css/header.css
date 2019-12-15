@@ -1,23 +1,26 @@
 .container-header {
     display: grid;
-    grid-template-rows: 60px
+    grid-template-rows: 60px;
+    position: fixed;
+    width: 100%;
 }
 
 .nav-bar {
     display: grid;
     grid-gap: 20px;
-    padding: 0px;
     grid-template-columns: 1fr 3fr;
     justify-items: center;
     align-items: center;
 }
 
 .navigation-links > a {
-    padding-left:50px;
+    margin-right: 40px;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
     color: var(--dark);
+    padding: 5px;
 }
 .navigation-links > a:hover {
-   color: gray;
+   color: black;
+   border-bottom: 1px solid black;
 }
