@@ -28,7 +28,7 @@
         width: 80px;
         line-height: 24px;
         text-decoration: none;
-        color: black;
+        color: var(--blood);
         cursor: pointer;
     }
 
