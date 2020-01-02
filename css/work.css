@@ -129,7 +129,7 @@
 
 .btn-works:hover {
     border: 1px solid white;
-    background-color: aquamarine;
+    background-color: var(--blood);
     color:white;
 }
 
