@@ -10,6 +10,7 @@
 
 .heroLeft {
     display:grid;
+    grid-template-rows: 1fr 1fr 0.5fr;
     padding-top: 100px;
     justify-self: end;
     color: var(--blood);
@@ -20,13 +21,32 @@
     }
 
     .heroParagraph{
-        line-height: 50px;
+        line-height: 46px;
         font-size: 36px;
+        position: relative;
+    }
+    .heroParagraph::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 44px;
+        border-right: solid 1px var(--blood);
+        animation: blink 0.8s infinite ease;
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 
     .btn {
-        margin-top: 40px;
+        margin-top: 50px;
         align-self: end;
+        justify-self: center;
         width: 80px;
         line-height: 24px;
         text-decoration: none;
