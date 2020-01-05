@@ -11,6 +11,7 @@
 }
 
     .workArticle {
+        margin: 70px 0 15px 0;
         display: grid;
         font-size: 32px;
         justify-items: center;

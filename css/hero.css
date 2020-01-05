@@ -10,20 +10,27 @@
 
 .heroLeft {
     display:grid;
-    grid-template-rows: 1fr 1fr 0.5fr;
-    padding-top: 100px;
+    grid-template-areas:
+    "h1Hero"
+    "animatedParagraph"
+    "btn";
+    grid-template-rows: 50px 50px 50px;
+    padding-top: 50px;
     justify-self: end;
     color: var(--blood);
 }
     h1{
         line-height: 50px;
         font-size: 42px;
+        grid-area: h1Hero;
     }
 
     .heroParagraph{
-        line-height: 46px;
+        line-height: 50px;
         font-size: 36px;
         position: relative;
+        grid-area: animatedParagraph;
+
     }
     .heroParagraph::after {
         content: "";
@@ -44,15 +51,25 @@
     }
 
     .btn {
-        margin-top: 50px;
-        align-self: end;
+        margin-top: 180px;
+        align-self: center;
         justify-self: center;
-        width: 80px;
+        text-align: center;
+        width: 280px;
         line-height: 24px;
         text-decoration: none;
         color: var(--blood);
+        border: 1px solid black;
         cursor: pointer;
+        grid-area: btn;
+        
     }
+
+    .btn:hover {
+        background-color: var(--blood);
+        color: var(--light);
+        border-color: white;
+      }
 
 .hero-img {
     padding-top: 80px;
