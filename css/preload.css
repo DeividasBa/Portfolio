@@ -1,0 +1,26 @@
+.preload {
+  display: grid;
+  grid-template-areas: 
+  ". img .";
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index:2;
+  top:0;
+  left:0;
+  background-color: black;
+  transition: opacity 0.2s 3s;
+}
+
+.preload img {
+  display: grid;
+  grid-area: img;
+  justify-self: center;
+  align-self: center;
+}
+
+.finished {
+  opacity: 0;
+  pointer-events: none;
+}

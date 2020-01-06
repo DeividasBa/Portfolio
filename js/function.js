@@ -1,4 +1,12 @@
+////////////Loading/////////////
+window.addEventListener("load", function(){
+  const preload = document.querySelector(".preload");
+  preload.classList.add("finished");
+});
+///////////Loading End//////////
 /////////////Header/////////////
+
+/////////////Header End/////////
 
 /////////////Hero/////////////
 
@@ -14,7 +22,7 @@ function typingEffect() {
       deletingEffect();
       return false;
     }
-    setTimeout(loopTyping, 300);
+    setTimeout(loopTyping, 200);
   };
   loopTyping();
 }
