@@ -1,76 +1,94 @@
 .hero {
-    display: grid;
-    grid-gap: 20px;
-    padding: 0px;
-    grid-template-columns: 4fr 4fr;
-    justify-items: center;
-    align-items: center;
-    font-family: Roboto;
+  display: grid;
+  grid-gap: 20px;
+  padding: 0px;
+  grid-template-columns: 4fr 4fr 4fr;
+  justify-items: center;
+  align-items: center;
+  font-family: Roboto;
 }
 
 .heroLeft {
-    display:grid;
-    grid-template-areas:
+  display: grid;
+  grid-template-areas:
+    "."
+    "greetings"
     "h1Hero"
     "animatedParagraph"
     "btn";
-    grid-template-rows: 50px 50px 50px;
-    padding-top: 50px;
-    justify-self: end;
-    color: var(--blood);
+  grid-template-rows: 120px 50px 50px 50px 50px;
+  padding-top: 50px;
+  justify-self: end;
+  color: var(--blood);
 }
-    h1{
-        line-height: 50px;
-        font-size: 42px;
-        grid-area: h1Hero;
-    }
+.greetings {
+    line-height: 20px;
+    font-size: 18px;
+    position: relative;
+    grid-area: greetings;
+    align-self: center ;
+}
 
-    .heroParagraph{
-        line-height: 50px;
-        font-size: 36px;
-        position: relative;
-        grid-area: animatedParagraph;
+h1 {
+  line-height: 60px;
+  font-size: 52px;
+  grid-area: h1Hero;
+  align-self: center ;
+}
 
-    }
-    .heroParagraph::after {
-        content: "";
-        position: absolute;
-        width: 1px;
-        height: 44px;
-        border-right: solid 1px var(--blood);
-        animation: blink 0.8s infinite ease;
-    }
-
-    @keyframes blink {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-
-    .btn {
-        margin-top: 180px;
-        align-self: center;
-        justify-self: center;
-        text-align: center;
-        width: 280px;
-        line-height: 24px;
-        text-decoration: none;
-        color: var(--blood);
-        border: 1px solid black;
-        cursor: pointer;
-        grid-area: btn;
-        
-    }
-
-    .btn:hover {
-        background-color: var(--blood);
-        color: var(--light);
-        border-color: white;
-      }
+.heroParagraph {
+  line-height: 50px;
+  font-size: 36px;
+  position: relative;
+  grid-area: animatedParagraph;
+}
+.heroParagraph::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 44px;
+  border-right: solid 1px var(--light);
+  animation: blink 0.8s infinite ease;
+}
 
 .hero-img {
-    padding-top: 80px;
+  width: 100%;
+  height: 600px;
+  background-image: url("../img/hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn {
+  margin-top: 180px;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  width: 280px;
+  line-height: 24px;
+  text-decoration: none;
+  color: var(--blood);
+  border: 1px solid var(--blood);
+  cursor: pointer;
+  grid-area: btn;
+}
+
+.btn:hover {
+  background-color: var(--blood);
+  color: var(--light);
+  border-color: white;
+}
+
+.hero-img {
+  padding-top: 80px;
 }

@@ -10,7 +10,7 @@
   top:0;
   left:0;
   background-color: black;
-  transition: opacity 0.2s 3s;
+  transition: opacity 0.2s 1s; /*padidinti iki 3s*/
 }
 
 .preload img {
