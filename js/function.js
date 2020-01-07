@@ -6,6 +6,19 @@ window.addEventListener("load", function(){
 ///////////Loading End//////////
 
 /////////////Header/////////////
+//navigation bar scroll down background color animation///
+let scrollPos = 100;
+const containerHeader = document.querySelector('.containerHeader');
+
+function checkIfScrolled() {
+  let vertical = window.scrollY;
+  if (vertical > scrollPos) {
+    containerHeader.classList.add('navBackColor');
+  } else {
+    containerHeader.classList.remove('navBackColor');
+  }
+}
+window.addEventListener('scroll', checkIfScrolled);
 
 /////////////Header End/////////
 
