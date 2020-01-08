@@ -9,6 +9,7 @@
 .navBackColor {
       background-color: var(--grain);
       opacity: 0.95;
+      transition: 1s;
     }
 
 .nav-bar {
