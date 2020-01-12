@@ -62,7 +62,29 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  backface-visibility: hidden;
+  animation: slideShow 21s linear infinite 0s;
+  animation-timing-function: ease-out;
+
 }
+
+@keyframes slideShow {
+  0%, 100% {
+    background-image: url("../img/hero.png");
+  }
+  10% {
+    background-image: url("../img/hero.png");
+  }
+  30% {
+    background-image: url("../img/hero4.jpg");
+  }
+  80% {
+    background-image: url("../img/hero3.png");
+  }
+
+
+}
+
 
 @keyframes blink {
   0% {
