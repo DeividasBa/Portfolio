@@ -19,13 +19,13 @@ html {
 
 .container-about {
   width: 100%;
-  height: 400px;
+  height: 600px;
   background-color: var(--shell);
 }
 
 .container-services {
   width: 100%;
-  height: 340px;
+  height: 550px;
   background-color: var(--light);
 }
 
@@ -43,6 +43,6 @@ html {
 
 .container-contacts {
   width: 100%;
-  height: 400px;
+  height: 600px;
   background-color: var(--shell);
 }

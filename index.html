@@ -31,26 +31,26 @@
         <header class="containerHeader">
             <div class="nav-bar">
                 <div> <img class="logo" src="./img/Logo.png" alt=""></div>
-                <div class="navigation-links">
-                    <a class="underline" href="#">Home</a>
-                    <a class="underline" href="#">About me</a>
-                    <a class="underline" href="#">Services</a>
-                    <a class="underline" href="#">Works</a>
-                    <a class="underline" href="#">Contacts</a>
-                </div>
+                <nav class="navigation-links">
+                    <a class="underline active" href="#Home">Home</a>
+                    <a class="underline" href="#About">About me</a>
+                    <a class="underline" href="#Services">Services</a>
+                    <a class="underline" href="#Works">Works</a>
+                    <a class="underline" href="#Contacts">Contacts</a>
+                </nav>
             </div>
         </header>
         <!-- Navigation end-->
         <!-- //////////////////////////////////////////////////// -->
         <!-- Hero -->
-        <div class="container-hero">
+        <div class="container-hero" id="Home">
             <div class="hero-img">
             <div class="hero">
                 <div class="heroLeft">
                     <p class="greetings">Hello There, I am </p>
                     <h1>Deividas Barbšys</h1>
                     <p class="heroParagraph"></p>
-                    <a href="#workDrop" class="btn">My Works</a>
+                    <a href="#Works" class="btn">My Works</a>
                 </div>
             </div>
         </div>
@@ -58,11 +58,9 @@
         <!-- Hero end-->
         <!-- //////////////////////////////////////////////////// -->
         <!-- About me -->
-        <div class="container-about">
+        <div class="container-about" id="About">
             <div class="aboutMe">
-                <h2 class="AboutHeadline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ea non
-                    debitis, fugiat assumenda necessitatibus sed ullam totam at earum nemo id porro quae dolorum
-                    obcaecati nulla labore hic temporibus.</h2>
+                <h2 class="AboutHeadline">ABOUT US.</h2>
                 <div class="aboutContent">
                     <p class="aboutParagraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quas culpa
                         accusamus eligendi voluptate exercitationem porro, commodi magnam ad excepturi!</p>
@@ -96,7 +94,7 @@
         <!-- About me end -->
         <!-- //////////////////////////////////////////////////// -->
         <!-- My Services -->
-        <div class="container-services">
+        <div class="container-services" id="Services">
             <h2 class='servicesArticle'>My Services</h2>
             <div class="services-clm">
                 <div class="services1">
@@ -122,7 +120,7 @@
         <!-- My Services end-->
         <!-- //////////////////////////////////////////////////// -->
         <!-- My Works -->
-        <div class="container-works" id="workDrop">
+        <div class="container-works" id="Works">
             <h2 class="workArticle">My Works</h2>
             <div class="workSamples">
                 <div class="work1"> <img class="img1" src="./img/portfolio4.jpg" alt="firstPhoto">
@@ -205,8 +203,7 @@
         <!-- Testimonials end-->
         <!-- //////////////////////////////////////////////////// -->
         <!-- Contacts -->
-
-        <div class="container-contacts">
+        <div class="container-contacts" id='Contacts'>
             <div class="contactsHeader">Do you have any Project? Let’s Talk</div>
             <p class="contactsParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut animi, architecto,
                 fugit iusto vitae commodi nobis itaque ullam quisquam ducimus vero, at quae laudantium suscipit.</p>
@@ -216,12 +213,7 @@
                 <div class="Gmail">Gmail</div>
             </div>
         </div>
-
         <!-- Contacts end-->
-        <!-- //////////////////////////////////////////////////// -->
-        <!-- Footer -->
-        <!-- Footer end-->
-        <!-- //////////////////////////////////////////////////// -->
     </body>
 <script src="./js/action.js"></script>
 <script src="./js/data.js"></script>
