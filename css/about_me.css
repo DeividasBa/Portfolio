@@ -76,6 +76,14 @@
 .socialUS {
   display: inline-block;
   margin: 0px 15px;
+  color: var(--light);
+  cursor: pointer;
+}
+
+.socialUS:hover {
+  transform: rotateY(720deg) rotateZ(-15deg);
+  transition:transform 0.5s ease-in;
+  color: black !important;
 }
 
 .slideshow-container {
