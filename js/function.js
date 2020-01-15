@@ -117,6 +117,24 @@ function animation() {
 
 animation();
 /////////////Hero End/////////////
+////////////AboutMe Start///////////////
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 7000);
+}
+
+////////////AboutMe End///////////////
 
 /////////////Contacts/////////////
 
@@ -143,3 +161,8 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+
+////////////////
+

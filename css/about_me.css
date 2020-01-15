@@ -1,86 +1,111 @@
+.container-about {
+  display: inline-block;
+  position: relative;
+}
 .aboutMe {
-display: grid;
-grid-gap: 20px;
-padding: 0px;
-grid-template-rows: 1fr 1fr;
-justify-items: center;
-align-items: center;
+  background-color: var(--tan);
+  display: inline-block;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
 }
 
 .aboutContent {
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr 3fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-      ". par1 . bar ."
-      ". par2 . bar ."
-      ". btn . bar .";
-  }
+  display: inline-block;
+  float: left;
+  width: 1000px;
+  height: 480px;
+}
+
+.photoUs {
+  display: inline-block;
+  width: 300px;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 65px;
+  left: 75px;
+}
+
+.leftas {
+  display: inline-block;
+  width: 45%;
+  float: left;
+  height: 480px;
+  position: relative;
+}
+
+.rightas {
+  display: inline-block;
+  width: 55%;
+  float: right;
+  height: 480px;
+}
 
 .AboutHeadline {
-    margin: 50px 0px 20px;
-    width: 50%;
-    text-align: justify;
+  display: inline-block;
+  float: right;
+  margin: 60px 25px 15px;
+  font-size: 30px;
+  font-weight: 640;
 }
 
 .aboutParagraph1 {
-    grid-area: par1;
-    font-size: 15px;
-    margin-bottom: 15px;
+  display: inline-block;
+  margin: 25px;
+  font-size: 18px;
+  line-height: 26px;
 }
-.aboutParagraph2 {
-    grid-area: par2;
-    font-size: 15px;
-    margin-bottom: 15px;
+
+.SocialMediaAboutUs {
+  margin: 25px;
+  font-size: 20px;
+  width: 300px;
+  margin-left: calc((100% - 300px) / 2);
+  text-align: center;
 }
+
 .btnAbout {
-    grid-area: btn;
-    margin-top: 25px;
-    width: 100px;
-    cursor: pointer;
-}
-.aboutProgressBar {
-    grid-area: bar;
-
+  margin-left: calc((100% - 100px) / 2);
 }
 
-.aboutProgressBar {
-    display: inline-block;
-    width: 100%;
+.socialUS {
+  display: inline-block;
+  margin: 0px 15px;
 }
-    .aboutProgressBar > .firstLine {
-        display: inline-block;
-        width: 100%;
-        margin-bottom: 3px;
-        font-size: 12px;
-        line-height: 10px;
-    }
-        .aboutProgressBar > .firstLine > .firstLineName {
-            display: inline-block;
-            float: left;
-        }
-        .aboutProgressBar > .firstLine > .firstLineProcent {
-            display: inline-block;
-            float: right;
-        }
-    .aboutProgressBar > .full {
-        display: inline-block;
-        width: 100%;
-        height: 4px;
-        background-color: #ccc;
-        border-radius: 3px;
-        overflow: hidden;
-    }
-        .aboutProgressBar > .full > .bar {
-            display: inline-block;
-            width: 90%;
-            height: 100%;
-            background-color: black;
-        }
-            .aboutProgressBar > .full > .bar > .loading {
-                display: inline-block;
-                width: 0;
-                height: 100%;
-                background-color: black;
-                animation: 3s 1 forwards;
-            }
+
+.slideshow-container {
+  display: inline-block;
+  width: 300px;
+  height: 350px;
+  position: absolute;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
