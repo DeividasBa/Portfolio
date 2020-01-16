@@ -76,6 +76,7 @@
   padding: 5px 50px;
   color: white;
 }
+
 .btnAbout:hover {
   background-color: var(--blood);
 }
@@ -86,7 +87,13 @@
   padding: 0px 10px;
 }
 
-.socialUS:hover {
+.socLink{
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+}
+
+a:hover i {
   transform: rotateY(360deg) rotateZ(-15deg);
   transition: transform 0.5s ease-in;
   color: var(--blood) !important;
