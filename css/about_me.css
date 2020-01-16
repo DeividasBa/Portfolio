@@ -70,20 +70,26 @@
 }
 
 .btnAbout {
-  margin-left: calc((100% - 100px) / 2);
+  margin-left: calc((100% - 200px) / 2);
+  text-decoration: none;
+  border: 1px white solid;
+  padding: 5px 50px;
+  color: white;
 }
-
+.btnAbout:hover {
+  background-color: var(--blood);
+}
 .socialUS {
   display: inline-block;
-  margin: 0px 15px;
   color: var(--light);
   cursor: pointer;
+  padding: 0px 10px;
 }
 
 .socialUS:hover {
-  transform: rotateY(720deg) rotateZ(-15deg);
-  transition:transform 0.5s ease-in;
-  color: black !important;
+  transform: rotateY(360deg) rotateZ(-15deg);
+  transition: transform 0.5s ease-in;
+  color: var(--blood) !important;
 }
 
 .slideshow-container {
