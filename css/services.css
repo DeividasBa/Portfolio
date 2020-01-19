@@ -33,6 +33,7 @@
   background-color: var(--shell);
   border-radius: 10px;
   box-shadow: black 0px 0px 10px;
+  cursor: pointer;
 }
 
 .container-services > .services-clm i {
@@ -55,3 +56,23 @@
   margin-bottom: 10px;
 }
 
+#services h3 {
+  color: white;
+  text-decoration: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    to right,
+    black,
+    black 50%,
+    white 50%
+  );
+  background-size: 200% 100%;
+  background-position: 100%;
+  cursor: pointer;
+}
+
+#services h3:hover {
+  transition: all 4s cubic-bezier(0.5, 1, 0.25, 0.2);
+   background-position: 0%;
+}
