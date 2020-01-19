@@ -166,3 +166,20 @@ function topFunction() {
 
 ////////////////
 
+///// Services///////
+
+function ServicesBlocks() {
+  let Services = document.getElementById('services');
+  let HTML = '';
+  for(let i = 0; i < servicesBox.length; i++){
+    HTML += `
+    <div>
+    <i class="${servicesBox[i].icon}"></i>
+    <h3>${servicesBox[i].name}</h3>
+    <p class="servicesParagraph">${servicesBox[i].text}</p>
+    </div>
+    `
+  }
+  Services.innerHTML = HTML;
+}
+ServicesBlocks();
