@@ -1,104 +1,157 @@
 .container-testimonials {
-    display: grid;
-    padding: 0px;
-    justify-items: center;
-    align-items: center;
-    grid-template-rows: 1.5fr 4fr 1fr; 
-    grid-template-areas: 
-    "article"
-    "square";
+  display: grid;
+  padding: 0px;
+  justify-items: center;
+  grid-template-rows: 1fr 4fr 1fr;
 }
 
 .testimonialsArticle {
-    display: grid;
-    font-size: 32px;
-    justify-items: center;
-    align-items: center;
-    grid-area: article;
+  font-size: 32px;
+  line-height: 50px;
+  align-self: end;
+  padding: 50px 0px 10px;
 }
 
-.testSquare {
-display: grid;
-grid-area: square;
-grid-template-rows: 1fr ;  
-grid-template-columns: 1fr 3fr 3fr 1fr;
-grid-row-gap: 10px;
-grid-column-gap: 50px;
-grid-template-areas: 
-    ". test1 test2 ."
-    ;
-    align-self: start;
+.container {
+  width: 80%;
+  margin: 20px auto;
+}
+.carousel {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  background: var(--light);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3), 0 5px 15px rgba(215, 206, 199, 0.3);
+}
+.slider {
+  display: flex;
+  height: 100%;
+  width: 400%;
+}
+.slider section {
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 20px;
+  width: ;
+}
+.left,
+.right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.arrow i {
+  font-size: 40px;
+  -webkit-user-select: none;
+}
+.arrow i:hover {
+  font-size: 70px;
+  -webkit-user-select: none;
+  color: var(--blood);
+}
+
+.left {
+  left: 10px;
+}
+.right {
+  right: 10px;
+}
+.control ul {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  transform: translate(-50%);
+}
+.control ul li {
+  width: 10px;
+  height: 10px;
+  background: var(--tan);
+  border: 1px solid #333;
+  border-radius: 50px;
+  margin: 10px;
+  cursor: pointer;
+}
+.control ul li.selected {
+  background: transparent;
 }
 
 .testimonials1{
-    display: grid;
-    grid-area: test1;
-    grid-template-rows: 1.5fr 1fr 0.5fr;  
+  display: inline-block;
+  width: 80%;
+  height: 80%;
 }
 
-.testimonials2{
-    display: grid;
-    grid-area: test2;
-    grid-template-rows: 1.5fr 1fr;  
+.testleft {
+  display: inline-block;
+  width: 250px;
+  height: 200px;
 }
 
-.testimonials3{
-    grid-area: test3;
+.testLeftSection{
+  display: grid;
+  grid-template-columns: 100px 30px 80px 40px;
+  grid-template-rows: 30px 80px 50px 40px;
+  grid-template-areas: 
+  ". . . ."
+  "foto foto name name"
+  "foto foto position position"
+  "social social social social"
+  ;
 }
 
-.testimonials4{
-    grid-area: test4;
-}
-
-.opinions{
-    display: grid;
-    align-self: start;
-    padding: 10px;
-    line-height: 30px;
-}
-
-.people {
-    display: grid;
-    grid-template-rows: 1fr; 
-    grid-template-columns: 1fr 4.5fr;
-    grid-template-areas: 
-    "foto name"
-    ;
-}
-
-.personID {
-    display: grid;
-    grid-template-rows: 2fr 2fr; 
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "name"
-    "position";
-}
-
-.personFoto {
-    display: grid;
-    grid-area: foto;
+.personImage {
+  display: grid;
+  grid-area: foto;
 }
 
 .personName {
-    display: grid;
-    grid-area: name;
-    padding-top: 5px;
-    font-size: 16px;
-    align-self: center;
+  display: grid;
+  grid-area: name;
+  align-self: flex-end;
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 
 .personPosition {
-    display: grid;
-    grid-area: position;
-    font-size: 12px;
-    align-self: start;
+  display: grid;
+  grid-area: position;
+  align-self: flex-start;
+  font-size: 14px;
 }
 
 .SocialMedia {
-    display: grid;
-    width: 250px;
-    grid-template-columns: 0.3fr 0.3fr 0.3fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
+  display: inline-block;
+  grid-area: social;
+  font-size: 32px;
+  margin-left: 15px;
+}
+
+.testright {
+  display: grid;
+  width: 520px;
+  height: 100%;
+  float: right;
+}
+
+.facePerson {
+  display: inline-block;
+  height:100px;
+  width: 100px;
+  margin: 15px;
+}
+
+.opinions {
+  display: inline-block;
+  margin: 10px;
+  align-self: center; 
+  font-style: italic; 
+  font-size: 18px;
 }
