@@ -5,15 +5,17 @@
 }
 
 .servicesArticle {
+  margin: 70px 0 15px 0;
+  display: grid;
   font-size: 32px;
-  line-height: 50px;
+  justify-items: center;
+  align-items: center;
   align-self: end;
 }
 
 .container-services > .servicesArticle {
   text-align: center;
   background-color: transparent;
-  padding: 50px 0px 10px;
   color: var(--dark);
 }
 
@@ -61,12 +63,7 @@
   text-decoration: none;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(
-    to right,
-    black,
-    black 50%,
-    white 50%
-  );
+  background-image: linear-gradient(to right, black, black 50%, white 50%);
   background-size: 200% 100%;
   background-position: 100%;
   cursor: pointer;
@@ -74,5 +71,5 @@
 
 #services h3:hover {
   transition: all 4s cubic-bezier(0.5, 1, 0.25, 0.2);
-   background-position: 0%;
+  background-position: 0%;
 }

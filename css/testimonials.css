@@ -35,8 +35,8 @@
   align-items: center;
   display: flex;
   font-size: 20px;
-  width: ;
 }
+
 .left,
 .right {
   position: absolute;
@@ -83,33 +83,45 @@
   background: transparent;
 }
 
-.testimonials1{
-  display: inline-block;
+.testimonials1 {
+  display: grid;
   width: 80%;
   height: 80%;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "lefty righty "
+    "lefty righty"
+    "lefty righty";
 }
 
 .testleft {
   display: inline-block;
-  width: 250px;
-  height: 200px;
+  grid-area: lefty;
+  width: 0px;
 }
 
-.testLeftSection{
+.testLeftSection {
   display: grid;
   grid-template-columns: 100px 30px 80px 40px;
   grid-template-rows: 30px 80px 50px 40px;
-  grid-template-areas: 
-  ". . . ."
-  "foto foto name name"
-  "foto foto position position"
-  "social social social social"
-  ;
+  grid-template-areas:
+    ". . . ."
+    "foto foto name name"
+    "foto foto position position"
+    "social social social social";
 }
 
 .personImage {
   display: grid;
   grid-area: foto;
+}
+
+.facePerson {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  margin: 15px;
 }
 
 .personName {
@@ -136,22 +148,13 @@
 
 .testright {
   display: grid;
-  width: 520px;
-  height: 100%;
-  float: right;
-}
-
-.facePerson {
-  display: inline-block;
-  height:100px;
-  width: 100px;
-  margin: 15px;
+  grid-area: righty;
 }
 
 .opinions {
   display: inline-block;
   margin: 10px;
-  align-self: center; 
-  font-style: italic; 
+  align-self: center;
+  font-style: italic;
   font-size: 18px;
 }
