@@ -1,26 +1,125 @@
 .container-contacts {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 10px;
   padding: 0px;
-  grid-template-rows: 0.5fr 3fr 4fr 2fr 2.5fr;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 0.2fr 2fr 2fr 2.5fr;
+  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
   /* justify-items: center; */
   align-items: center;
   justify-items: stretch;
   grid-template-areas:
-    ". . ."
-    ". header ."
-    ". paragraph."
-    ". rows ."
-    ". . .";
+    ". . . . ."
+    ". header header header ."
+    ". . . . ."
+    ". form form form ."
+    ". form form form ."
+    ". . rows . .";
+}
+/* 
+.contacts-information {
+  display: grid;
+  grid-area: info;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr 2fr 1fr 3fr;
+  grid-template-areas:
+  " . phone . "
+  " . . . "
+  " . email . "
+  " . . . "
+  " . linked . "
+  " . . . "
+  ;
+} */
+
+.contact-form {
+  display: grid;
+  grid-area: form;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 1fr 2fr 1fr;
+  grid-template-areas:
+  " . "
+  "name"
+  " . "
+  "eadress"
+  "textfield"
+  ;
+  margin-top: 40px;
+  height: 250px;
+}
+
+.Name {
+  display: grid;
+  grid-area: name;
+  height: 40px;
+  font-size: 15px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom:1px solid black;
+
+}
+
+.EmailAdress {
+  display: grid;
+  grid-area: eadress;
+  height: 40px;
+  font-size: 15px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom:1px solid black;
+
+}
+
+.TextField {
+  display: grid;
+  grid-area: textfield;
+  height: 130px;
+  font-size: 15px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom:1px solid black;
+}
+
+.phone {
+  display: grid;
+  grid-area: phone;
+}
+
+.email {
+  display: grid;
+  grid-area: email;
+
+}
+
+.linked {
+  display: grid;
+  grid-area: linked;
+
+}
+
+.inputName {
+  display: grid;
+  grid-area: inputName;
+}
+
+.inputEmail {
+  display: grid;
+  grid-area: inputName;
+}
+
+.inputText {
+  display: grid;
+  grid-area: inputName;
 }
 
 .contactsHeader {
   display: grid;
   grid-area: header;
   font-size: 34px;
-  justify-items: start;
   width: 100%;
+  text-align: center;
 }
 
 .contactsParagraph {
