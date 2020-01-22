@@ -2,8 +2,8 @@
   display: grid;
   grid-gap: 10px;
   padding: 0px;
-  grid-template-rows: 1fr 1fr 0.2fr 2fr 2fr 2.5fr;
-  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 0.1fr 2fr 2fr 2.5fr;
+  grid-template-columns: 1fr 0.1fr 2fr 0.11fr 1fr;
   /* justify-items: center; */
   align-items: center;
   justify-items: stretch;
@@ -15,21 +15,6 @@
     ". form form form ."
     ". . rows . .";
 }
-/* 
-.contacts-information {
-  display: grid;
-  grid-area: info;
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 1fr 2fr 1fr 2fr 1fr 3fr;
-  grid-template-areas:
-  " . phone . "
-  " . . . "
-  " . email . "
-  " . . . "
-  " . linked . "
-  " . . . "
-  ;
-} */
 
 .contact-form {
   display: grid;
@@ -51,10 +36,11 @@
   display: grid;
   grid-area: name;
   height: 40px;
-  font-size: 15px;
+  font-size: 14px;
   width: 100%;
   background: transparent;
   border: none;
+  outline: none;
   border-bottom:1px solid black;
 
 }
@@ -63,10 +49,11 @@
   display: grid;
   grid-area: eadress;
   height: 40px;
-  font-size: 15px;
+  font-size: 14px;
   width: 100%;
   background: transparent;
   border: none;
+  outline: none;
   border-bottom:1px solid black;
 
 }
@@ -75,11 +62,13 @@
   display: grid;
   grid-area: textfield;
   height: 130px;
-  font-size: 15px;
   width: 100%;
   background: transparent;
   border: none;
+  outline: none;
   border-bottom:1px solid black;
+  font: 15px Arial;  
+  padding-top: 10px;
 }
 
 .phone {
