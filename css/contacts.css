@@ -3,17 +3,17 @@
   grid-gap: 10px;
   padding: 0px;
   grid-template-rows: 0.1fr 1fr 0.1fr 2fr 2fr 2.5fr;
-  grid-template-columns: 1fr 0.1fr 2fr 0.11fr 1fr;
-  /* justify-items: center; */
+  grid-template-columns: 1.5fr 0.1fr 2fr 0.1fr 1.5fr;
   align-items: center;
   justify-items: stretch;
   grid-template-areas:
     ". . . . ."
     ". header header header ."
     ". . . . ."
-    ". form form form ."
-    ". form form form ."
+    "phone form form form ."
+    "email form form form ."
     ". . rows . .";
+  font-family: "Montserrat", sans-serif;
 }
 
 .contact-form {
@@ -22,12 +22,11 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 2fr 1fr 2fr 1fr;
   grid-template-areas:
-  " . "
-  "name"
-  " . "
-  "eadress"
-  "textfield"
-  ;
+    " . "
+    "name"
+    " . "
+    "eadress"
+    "textfield";
   margin-top: 40px;
   height: 250px;
 }
@@ -36,26 +35,38 @@
   display: grid;
   grid-area: name;
   height: 40px;
-  font-size: 14px;
+  font-size: 16px;
   width: 100%;
   background: transparent;
+  background: none;
   border: none;
   outline: none;
-  border-bottom:1px solid black;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  padding-left: 5px;
+  font-family: "Montserrat", sans-serif;
+}
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  border-bottom: 1px solid black;
+  -webkit-text-fill-color: var(--blood);
+  -webkit-box-shadow: 0 0 0px 1000px var(--shell) inset;
 }
 
 .EmailAdress {
   display: grid;
   grid-area: eadress;
   height: 40px;
-  font-size: 14px;
+  font-size: 16px;
   width: 100%;
   background: transparent;
   border: none;
   outline: none;
-  border-bottom:1px solid black;
-
+  border-bottom: 1px solid black;
+  padding-left: 5px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .TextField {
@@ -66,41 +77,57 @@
   background: transparent;
   border: none;
   outline: none;
-  border-bottom:1px solid black;
-  font: 15px Arial;  
+  border-bottom: 1px solid black;
+  font: 15px Arial;
+  padding: 10px 5px;
+  color: var(--blood);
+  font-family: "Montserrat", sans-serif;
+}
+
+p::first-letter {
+  text-transform: uppercase;
+}
+
+textarea {
+  resize: none;
+}
+
+.phone > h5,
+.email > h5 {
+  display: block;
+  margin: 1px 3px 0px 0px;
+  font-size: 18px;
+}
+
+.phone > p,
+.email > p {
   padding-top: 10px;
+  font-size: 14px;
+}
+
+h5:before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin: 0px 5px 2px 0px;
+}
+
+.box:before {
+  background: var(--blood);
 }
 
 .phone {
   display: grid;
   grid-area: phone;
+  margin-left: 50px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .email {
   display: grid;
   grid-area: email;
-
-}
-
-.linked {
-  display: grid;
-  grid-area: linked;
-
-}
-
-.inputName {
-  display: grid;
-  grid-area: inputName;
-}
-
-.inputEmail {
-  display: grid;
-  grid-area: inputName;
-}
-
-.inputText {
-  display: grid;
-  grid-area: inputName;
+  margin-left: 50px;
 }
 
 .contactsHeader {
@@ -109,63 +136,27 @@
   font-size: 34px;
   width: 100%;
   text-align: center;
+  margin: 70px 0 15px 0;
 }
 
-.contactsParagraph {
-  grid-area: paragraph;
-  text-align: justify;
-}
-
-.contactsRow {
-  grid-area: rows;
-  display: grid;
-  grid-column-gap: 30px;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: start;
-  grid-template-areas: "fba linkin gmail";
-}
-
-.contactsRow > div {
-  border: 1px solid black;
+.FormBtn {
   width: 100%;
-  height: 100%;
+  align-self: center;
   text-align: center;
-  padding: 15px 0px 0px 0px;
+  margin-top: 20px;
 }
 
-.FBContacts {
-  grid-area: fba;
+.btn-form {
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 5px 150px;
+  color: black;
   background-color: var(--grain);
-  cursor: pointer;
 }
 
-.FBContacts:hover {
-    background-color: var(--blood);
-    color: var(--light);
-    border-color: white;
-}
-
-.LinkedIn {
-    grid-area: linkin;
-    background-color: var(--grain);
-    cursor: pointer;
-}
-.LinkedIn:hover {
-    background-color: var(--blood);
-    color: var(--light);
-    border-color: white;
-
-}
-
-.Gmail {
-    grid-area: gmail;
-    text-align: center;
-    background-color: var(--grain);
-    cursor: pointer;
-}
-.Gmail:hover {
+.btn-form:hover {
+  border: 1px solid white;
   background-color: var(--blood);
-  color: var(--light);
-  border-color: white;
+  color: white;
 }
