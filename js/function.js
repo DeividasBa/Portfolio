@@ -185,6 +185,47 @@ function ServicesBlocks() {
 ServicesBlocks();
 
 
+function TestiBlocks() {
+  let Testi = document.querySelectorAll(".testiPlace");
+  for(let i=0; i < testimonialsStructure.length; i++){
+    let HTML = '';
+    HTML += `
+    <div class="testimonials1">
+                <div class="testleft">
+                  <div class="testLeftSection">
+                    <div class="personImage">
+                      <img
+                        class="facePerson"
+                        src="${testimonialsStructure[i].img}"
+                        alt="face"
+                      />
+                    </div>
+                    <div class="personName">${testimonialsStructure[i].name}</div>
+                    <div class="personPosition">${testimonialsStructure[i].position}</div>
+                    <div class="SocialMedia">
+                      <a class="socLinkTest" href="">
+                        <i class="${testimonialsStructure[i].icon1} fa socialTest"></i>
+                      </a>
+                      <a class="socLinkTest" href="">
+                        <i class="${testimonialsStructure[i].icon2} fa socialTest"></i>
+                      </a>
+                      <a class="socLinkTest" href="">
+                        <i class="${testimonialsStructure[i].icon3} fa socialTest"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="testright">
+                  <p class="opinions">${testimonialsStructure[i].text}</p>
+                </div>
+              </div>
+      `
+      Testi[i].innerHTML = HTML;
+  }
+}
+TestiBlocks();
+
+
 //////Testi
 
 const left = document.querySelector('.left');
