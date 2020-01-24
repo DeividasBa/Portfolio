@@ -17,10 +17,14 @@
   margin: 20px auto;
 }
 .carousel {
+  border-radius: 5px;
+  width: 100%;
   height: 250px;
+  display: flex;
+  justify-content: flex-start;
   overflow: hidden;
   position: relative;
-  border-radius: 5px;
+  height: 250px;
   background: var(--light);
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.3), 0 5px 15px rgba(215, 206, 199, 0.3);
 }
@@ -28,6 +32,8 @@
   display: flex;
   height: 100%;
   width: 400%;
+  flex-shrink: 0;
+  transition: all 0.5s;
 }
 .slider section {
   flex-basis: 100%;
@@ -73,14 +79,14 @@
 .control ul li {
   width: 10px;
   height: 10px;
-  background: var(--tan);
+  background: transparent;
   border: 1px solid #333;
   border-radius: 50px;
   margin: 10px;
   cursor: pointer;
 }
 .control ul li.selected {
-  background: transparent;
+  background: var(--tan);
 }
 
 .testimonials1 {
@@ -93,6 +99,7 @@
     "lefty righty "
     "lefty righty"
     "lefty righty";
+  /* margin-left: calc((100% - 80%)/2); */
 }
 
 .testleft {
@@ -144,6 +151,24 @@
   grid-area: social;
   font-size: 32px;
   margin-left: 15px;
+}
+
+.socLinkTest{
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  color: var(--tan);
+}
+
+a:hover i {
+  transform: rotateY(360deg) rotateZ(-15deg);
+  transition: transform 0.5s ease-in;
+  color: var(--blood) !important;
+}
+
+.socialTest {
+  cursor: pointer;
 }
 
 .testright {

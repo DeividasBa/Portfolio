@@ -43,5 +43,45 @@ const servicesBox = [
         text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque in dolorum dolor?",
     },    
 ];
-
 /// My Services End//////
+
+/// Testimonials ////
+
+const testimonialsStructure = [
+    {
+        img: './img/test1.png',
+        name: 'Liutauras Vijeikis',
+        position: 'Projektu vadovas',
+        icon1: 'fa fa-facebook-square',
+        icon2: 'fa fa-linkedin-square',
+        icon3: 'fa fa-instagram',
+        text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.Provident repellat repellendus dolore blanditiis!Lorem ipsumdolor sit amet consectetur adipisicing elit. orem ipsumdolor sit amet consectetur adipisicing elit. Eius hicadipisci rerum magnam praesentium ratione, error veniam nesciunt ad voluptatibus.",
+    },
+    {
+        img: './img/test2.png',
+        name: 'Liudas Gustys',
+        position: 'Marketingo vadovas',
+        icon1: 'fa fa-facebook-square',
+        icon2: 'fa fa-linkedin-square',
+        icon3: 'fa fa-instagram',
+        text: "Lorem ipsum, dolor sit hicadipisci rerum magnam praesentium ratione, error veniam nesciunt ad voluptatibus.",
+    },
+    {
+        img: './img/test3.png',
+        name: 'Bliudas Gustys',
+        position: 'Marketingo vadovas',
+        icon1: 'fa fa-facebook-square',
+        icon2: 'fa fa-linkedin-square',
+        icon3: 'fa fa-instagram',
+        text: "Lorem ipsum, dolor sit hicadipisci rerum magnam praesentium ratione, error veniam nesciunt ad voluptatibus.",
+    },
+    {
+        img: './img/test4.png',
+        name: 'Rokas Gustys',
+        position: 'Marketingo vadovas',
+        icon1: 'fa fa-facebook-square',
+        icon2: 'fa fa-linkedin-square',
+        icon3: 'fa fa-instagram',
+        text: "Lorem ipsum, dolor sit hicadipisci rerum magnam praesentium ratione, error veniam nesciunt ad voluptatibus.",
+    },
+];
